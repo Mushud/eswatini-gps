@@ -1,0 +1,17 @@
+{
+  "name": "eswatini-post-gps",
+  "version": "1.0.0",
+  "description": "A GPS addressing system for eswatini post",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}
