@@ -1,12 +1,14 @@
 // server.js
 const express = require('express');
 const bodyParser = require('express').json;
+const morgan = require('morgan');
 const { encode, decode } = require('./swazi-address6');
 
 const app = express();
 const PORT = 3040;
 
 app.use(bodyParser());
+app.use(morgan("combined"));
 
 // Encode route
 app.post('/encode', (req, res) => {
