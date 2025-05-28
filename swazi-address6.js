@@ -23,8 +23,8 @@ function encode(lat, lng) {
   const minLng = 30.8,
     maxLng = 32.2;
 
-  const rows = 1600,
-    cols = 1000;
+  const rows = 5000,
+    cols = 5000;
 
   const latIndex = Math.floor(((lat - minLat) / (maxLat - minLat)) * rows);
   const lngIndex = Math.floor(((lng - minLng) / (maxLng - minLng)) * cols);
@@ -53,8 +53,8 @@ function decode(code) {
   const minLng = 30.8,
     maxLng = 32.2;
 
-  const rows = 1600,
-    cols = 1000;
+  const rows = 5000,
+    cols = 5000;
 
   const lat = minLat + (latIndex + 0.5) * ((maxLat - minLat) / rows);
   const lng = minLng + (lngIndex + 0.5) * ((maxLng - minLng) / cols);
