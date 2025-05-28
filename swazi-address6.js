@@ -60,8 +60,8 @@ function decode(code) {
   const lng = minLng + (lngIndex + 0.5) * ((maxLng - minLng) / cols);
 
   return {
-    lat: parseFloat(lat.toFixed(6)),
-    lng: parseFloat(lng.toFixed(6)),
+    lat: parseFloat(lat),
+    lng: parseFloat(lng),
   };
 }
 
