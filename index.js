@@ -22,6 +22,7 @@ app.post('/encode', (req, res) => {
     const code = encode(lat, lng);
     res.json({ code });
   } catch (err) {
+    console.log(err);
     res.status(500).json({ error: 'Encoding failed' });
   }
 });
